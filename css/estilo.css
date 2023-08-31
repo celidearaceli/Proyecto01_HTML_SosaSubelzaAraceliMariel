@@ -1,0 +1,79 @@
+body{ /*aplicando CSS al body*/
+    color: black;
+    background-color: #eaeeca;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%239d9978' fill-opacity='0.1'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); /*Fondo de la pagina, patrones*/
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;/*Fuente que se utilizará*/
+}
+
+a{
+    color: black; /*Todas las etiquetas con a serán de color negro*/
+}
+
+ul{
+    list-style: none;/*se utiliza para establecer de forma abreviada el valor de una o más propiedades individuales*/
+}
+.container{
+    width: 90%;/*Ancho*/
+    margin: auto;/*margen*/
+}
+/*Navegación*/
+.nav{
+    font-size: 17px; /*tamaño de fuente*/
+    display: flex; /*establece los tipos de visualización interna y externa de un elemento, pantalla*/
+    justify-content: space-between; /*define cómo el navegador distribuye el espacio entre y alrededor 
+                                     de los items flex, a lo largo del eje principal de su contenedor*/
+    align-items: center; /*centra los elementos del navegador*/
+    height: 60px;/*alto*/
+    padding: 20px 0;/*relleno*/
+}
+/*Navegación LEFT*/
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+ padding:10px ;   
+}
+.nav-brand{
+    width: 80px;/*ancho*/
+}
+.picJU{
+    width: 1200px ;
+}
+.nav ul li a:hover {
+border-bottom: 2px solid #eaeeca; /*ermite de definir de una vez todas las propiedades individuales*/
+}
+.nav ul.nav-menu{
+    flex: 1;
+    margin-left: 20px;/*establece el margen izquierdo de un elemento especificando una longitud o un porcentaje*/
+}
+
+  #form p {
+    text-align: center;
+  }
+  
+  #form label {
+    font-size: 20px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
